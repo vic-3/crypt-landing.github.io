@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -15,6 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Lato:wght@400;700;900&family=Nunito:wght@400;500;600&family=Poppins&family=Public+Sans&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <title>Airdrop</title>
     <style>
+      
         .large-icons{
             font-size: 45px;
         }
@@ -22,7 +23,7 @@
             background-color: #6645C2 !important;
             
             padding: 30px !important;
-            height: 650px;
+            min-height: 650px;
         }
         nav{
             background-color: #6645C2 !important;
@@ -65,6 +66,7 @@
 .input-group{
     padding: 50px;
 }
+
     </style>
 </head>
 <body>
@@ -78,7 +80,7 @@
   </a>
   
   <!-- Links -->
-  <ul class="navbar-nav text-center">
+  <!-- <ul class="navbar-nav text-center">
     <li class="nav-item">
       <a class="nav-link" href="#">Link 1</a>
     </li>
@@ -88,7 +90,7 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Link 3</a>
     </li>
-  </ul>
+  </ul> -->
 </nav>
 
 <div class="wrapper">
@@ -100,16 +102,23 @@
             Crypto Airdrop Notification
             Service!
         </h1>
-        <p class="text-light">
+        <p class="text-light py-4">
             Get exclusive, real-time alerts about
             the hottest crypto airdrops and
             supercharge your digital assets!
         </p>
-        <p>
-            <button class="btn btn-info rounded-4 btn-lg">
-                Learn More
-            </button>
-        </p>
+        <form class="" method="post">
+            <div class="form-group col-lg-8">
+                <input type="text" class="form-control rounded-4 my-2" placeholder="Your name" name="name" required/>
+                <input type="email" class="form-control rounded-4 my-2" placeholder="Your Email" name="email" required/>
+                <p>
+                    <button class="btn btn-info border-0  px-4 rounded-4 btn-lg">
+                        <small>Claim Free Crypto</small>
+                    </button>
+                </p>
+            </div>
+        </form>
+        
     </div>
     <div class="col-12 col-md-6">
         <img src="assets/hero-img.png" class="w-100 float-end"/>
@@ -226,7 +235,7 @@
   </div>
 
 
-  <div class="row p-3" id="section-5">
+  <div class="row p-2" id="section-5">
     <h3 class="text-info">
         Don't wait to seize
         the future
@@ -235,13 +244,22 @@
         Sign up now for our Crypto Airdrop Notification Service and start
 capitalizing on the best airdrops today!
     </p>
-
+<div class="col-lg-8 mx-auto">
     <form method="post" action="contact.php">
-        <div class="input-group p-4">
-            <input type="email" id="email" class="form-control rounded bg-input" placeholder="Enter Your Email Address" required/>
-            <button class="input-group-text btn btn-info">Get Started</button>
+        <div class=" p-2 row">
+            <div class="col-9">
+                <input type="email" id="email" class="form-control rounded-4 w-100 " placeholder="Enter Your Email Address" required/>
+            </div>
+            <div class="col-2">
+                <button class="input-group-text btn btn-info rounded-4 border-0">Yes, I want in</button>
+            </div>
+            
+            
         </div>
+        
     </form>
+</div>
+    
 
     <p  class="text-light text-center">
         [Your Company Name] - Empowering you in the digital currency revolution
@@ -259,19 +277,10 @@ capitalizing on the best airdrops today!
 </div>
 </div>
 <footer>
-    <div class="row">
-            <div class="col-12 col-md-3">
-
-            </div>
-            <div class="col-12 col-md-3">
-                
-            </div>
-            <div class="col-12 col-md-3">
-                
-            </div>
-            <div class="col-12 col-md-3">
-                
-            </div>
+    <div class="row p-2 text-white">
+            <center>
+                Copyright [Company name] 2023
+            </center>
     </div>
     
 </footer>
